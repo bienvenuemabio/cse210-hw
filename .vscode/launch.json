@@ -2,6 +2,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
 
         {
             "name": "Sandbox Project",
@@ -143,7 +144,7 @@
             "cwd": "${workspaceFolder}/prove/Develop02",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
-            "stopAtEntry": false
+            "stopAtEntry": true
         },
 
         {
