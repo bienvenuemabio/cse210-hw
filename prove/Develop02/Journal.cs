@@ -1,12 +1,9 @@
-public class journal
-{
-    public string _journalTitle="";
 
-    public string _prompt1 = "";
-    public string _prompt2 = "";
-    public string _prompt3 = "";
-    public string _prompt4 = "";
-
-    public string _prompt5 = "";
-    
-}
+public class Journal{
+    public string _journalTitle;
+    public string _journalWord;
+    public void Display()
+    {
+        Console.WriteLine($"{_journalTitle} : {_journalWord}");
+    }
+} 
