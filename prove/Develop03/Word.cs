@@ -1,6 +1,19 @@
-public class Word{
-    private string _singleWord;
+using system;
+public class Word
+{
+    private List<string> _words = new List<string>();
 
+    public void SetWord(string words)
+    {
+        _words= words;
+
+    }
+
+    public string GetWord(){
+        return _words;
+    }
+     
+    
 
     public void hide(){
 
