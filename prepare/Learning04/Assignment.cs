@@ -4,12 +4,20 @@ public class Assignment {
 
     public Assignment(string _studentName, string _topic)
     {
+        _studentName= studentName;
         _topic = topic;
 
     }
 
-    public string GetSummary(){
+    public string GetStudentName(){
         return _studentName;
+    }
+    public string GetTop(){
+        return _topic;
+    }
+
+    public string GetSummary(){
+        return _studentName + "-" _topic;
 
     }
 
