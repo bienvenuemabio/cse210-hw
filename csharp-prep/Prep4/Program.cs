@@ -38,7 +38,7 @@ class Program
           if  (number > max)
           {
             max = number;
-            Console.WriteLine("The largest number is: {max}");
+            Console.WriteLine($"The largest number is: {max}");
           }
           
         }
