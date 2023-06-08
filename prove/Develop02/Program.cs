@@ -4,24 +4,34 @@ class Program
 {
     static void Main(string[] args)
     {
-      Console.Write("Hello Develop02 World!");
-      Console.Write("Welcome to our journal program!");
-      Console.Write("1.Write");  
-      Console.Write("2.Display");
-      Console.Write("3.load");
-      Console.Write("4.Save");
-      Console.Write("5.quit");
-      Console.WriteLine("What could you like to do?: "); 
-      string userInput= Console.ReadLine();
-      int _userOption= int.Parse(userInput);
-        
-      while (_userOption != 5)  
+      bool quit = false;
+      do
       {
-        if (_userOption ==1)
-        {
+        Console.Write("Welcome to our journal program!");
+        Console.WriteLine("1.Write");  
+        Console.WriteLine("2.Display");
+        Console.WriteLine("3.load");
+        Console.WriteLine("4.Save");
+        Console.WriteLine("5.quit");
+
+
+      Console.Write("What could you like to do?: "); 
+      //string userInput= Console.ReadLine();
+      int _userOption= int.Parse(Console.ReadLine());
+      if (_userOption == 5)
+      {
+        quit= true;
+      }else
+      {
+        quit= false;
+      }
+        
+       switch(_userOption)
+       {
+        case 1:
           DateTime theCurrentTime = DateTime.Now;
           string _dateText = theCurrentTime.ToShortDateString();
-          Console.WriteLine($"{_dateText}: ");
+          Console.WriteLine($"date:{_dateText}");
 
           List <string> prompts = new List<string>();
           prompts.Add("Who was the most interesting person I interacted with today?");
@@ -36,12 +46,28 @@ class Program
             Console.WriteLine(p);
           }
 
+            break;
+        
+          case 2:
 
+            break;
 
-        }
-      }
+          case 3:
+
+            break;
+          case 4:
+
+            break;
+       }
+      
+    Console.Clear();
+      
           
       
     
-    }
+    }while(quit);
+
+      }
+
+      
 }
