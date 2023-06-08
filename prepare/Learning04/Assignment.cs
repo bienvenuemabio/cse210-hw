@@ -2,7 +2,7 @@ public class Assignment {
     private string _studentName;
     private string _topic;
 
-    public Assignment(string _studentName, string _topic)
+    public Assignment(string studentName, string topic)
     {
         _studentName= studentName;
         _topic = topic;
@@ -17,7 +17,7 @@ public class Assignment {
     }
 
     public string GetSummary(){
-        return _studentName + "-" _topic;
+        return _studentName + "-" +_topic;
 
     }
 
