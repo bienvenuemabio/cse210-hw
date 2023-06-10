@@ -7,7 +7,7 @@ class Program
       bool quit = false;
       do
       {
-        Console.Write("Welcome to our journal program!");
+        Console.WriteLine("Welcome to our journal program!");
         Console.WriteLine("1.Write");  
         Console.WriteLine("2.Display");
         Console.WriteLine("3.load");
@@ -21,7 +21,8 @@ class Program
       if (_userOption == 5)
       {
         quit= true;
-      }else
+      }
+      else
       {
         quit= false;
       }
