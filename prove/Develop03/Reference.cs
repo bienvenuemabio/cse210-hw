@@ -14,7 +14,7 @@ public class Reference
 
     }
 
-    public Reference(string book, int _chapter, int verse)
+    public Reference(string book, int chapter, int verse)
     {
         _book = book;
         _chapter = chapter;
@@ -28,7 +28,7 @@ public class Reference
 
     }
 
-    public void SetReference(){
+    public void SetReference(string book, int chapter, int verse){
         _book = book;
         _chapter= chapter;
         _verse= verse;
