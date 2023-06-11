@@ -1,15 +1,21 @@
 public class Scripture{
-    private List<string> _texts = new List<string>();
+
+    private string _scripture;
 
     public Scripture()
     {
-        
+        _scripture="";
+
+    }
+    public Scripture(string scripture){
+        _scripture= scripture;
     }
 
 
 
-    public void displayScripture(string text){
-        _texts.Add(text);
+    public string displayScripture()
+    {
+        return _scripture;
 
     }
 
@@ -20,7 +26,8 @@ public class Scripture{
 
     }
 
-    public void IsCompletelyHidden(){
+    public void IsCompletelyHidden()
+    {
         
     }
 

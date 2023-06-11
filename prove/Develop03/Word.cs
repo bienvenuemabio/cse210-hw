@@ -1,24 +1,26 @@
-using System.Collections.Generic;
+
 public class Words
 {
-    private List<string> _words = new List<string>();
+    private  string _word;
 
     public Words()
     {
-        _words.Add("Demander et l'on");
-        _words.Add("vous donnera,");
-        _words.Add("chercher et vous trouverez;");
-        _words.Add("frappez et");
-        _words.Add("et l'on vous ouvrira");
-
+        _word= "";
     }   
+    public Words(string word)
+    {
+        _word= word;
+
+    }
     public void hide()
     {
-
+        _word= "_ _ _";
+    
     }
 
     public void Show()
-    {
+    {   
+        _word= "";
 
     }
 
