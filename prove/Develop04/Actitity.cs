@@ -27,4 +27,19 @@ public class Activity
     {
         return _duration;
     }
+
+    public void DisplayStartMessage(){
+
+    }
+    public void DisplayEndMessage(){
+
+    }
+
+    public void PausingShowingSpinner(){
+
+    }
+
+    public void PausingShowingCountdownTimer(){
+        
+    }
 }
