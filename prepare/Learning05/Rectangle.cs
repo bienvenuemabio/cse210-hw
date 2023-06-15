@@ -1,9 +1,9 @@
-public class  Rectangle: shape
+public class  Rectangle: Shape
 {
     private double _length;
     private double _width;
 
-    public rectangel(string color, double length, double width):base(color)
+    public Rectangle(string color, double length, double width):base(color)
     {
         _length= length;
         _width= width;

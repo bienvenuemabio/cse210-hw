@@ -1,8 +1,8 @@
-public class Circle: shape
+public class Circle: Shape
 {
-    private doudle _radius;
+    private double _radius;
 
-    private Circle(sting color, double radius): base(color)
+    private Circle(string color, double radius): base(color)
     {
         _radius= radius;
     }

@@ -12,7 +12,7 @@ class Program
             Console.WriteLine("2.Start Reflecting Activity");
             Console.WriteLine("3.Start Listing Activity");
             Console.WriteLine("4.Quit");
-            Console.WriteLine("Select your choice:");
+            Console.Write("Select your choice:");
 
             int _userChoice= int.Parse(Console.ReadLine());
 

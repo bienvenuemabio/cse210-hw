@@ -6,8 +6,12 @@ public class Square: Shape
         _side= side;
 
     }
+    public square(double side)
+    {
+        _color=color;
+    }
 
-    public double SetSide()
+    public void SetSide(double side)
     {
         _side= side;
 
