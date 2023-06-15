@@ -28,7 +28,8 @@ public class Activity
         return _duration;
     }
 
-    public void DisplayStartMessage(){
+    public void DisplayStartMessage()
+    {
 
     }
     public void DisplayEndMessage(){
