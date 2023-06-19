@@ -8,32 +8,9 @@ public class  Rectangle: Shape
         _length= length;
         _width= width;
     }
-
-    public double GetLength()
-    {
-       return  _length;
-
-    }
-    public double GetWidth()
-    {
-       return  _width;
-
-    }
-
-    public double SetLength()
-    {
-        _length= length;
-
-    }
-    public double SetWidth()
-    {
-        _width= width;
-
-    }
-
     public override double GetArea()
     {
-        return _length* _width;
+        return _length * _width;
     }
 
 

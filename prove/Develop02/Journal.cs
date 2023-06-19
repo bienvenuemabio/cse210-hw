@@ -7,6 +7,7 @@ public class Journal{
     {
 
     }
+    
     public void Display()
     {
         Console.WriteLine($"{_journalTitle} : {_journalWord}");
