@@ -1,0 +1,26 @@
+Public class Goals{
+    private string _name;
+    private string _description; 
+    private integer _point;
+}
+Public Goals()
+{
+}
+public string Getname()
+{
+    return _name;
+}
+public string GetDescription()
+{
+    return _description;
+}
+
+public integer GetPoint()
+{
+    return _point;
+}
+
+public string RecordEvent()
+{
+
+}
