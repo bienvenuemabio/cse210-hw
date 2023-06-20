@@ -1,15 +1,23 @@
 
 public class Journal{
-    public string _journalTitle;
-    public string _journalWord;
-
-    public Journal()
-    {
-
-    }
-    
-    public void Display()
-    {
-        Console.WriteLine($"{_journalTitle} : {_journalWord}");
-    }
+    public string List<Entry> Entries= new List<Entry>();
 } 
+public Journal()
+{
+}
+public void AddingAnEntry()
+{
+
+}
+public void DisplayingAllEntries()
+{
+
+}
+public void SavingToFile()
+{
+
+}
+public void LoadingFromFile()
+{
+    
+}
