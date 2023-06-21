@@ -20,7 +20,7 @@ class Program
       int _userOption= int.Parse(Console.ReadLine());
       if (_userOption == 5)
       {
-        quit= true;
+        quit= true; 
       }
       else
       {
@@ -30,26 +30,39 @@ class Program
        switch(_userOption)
        {
         case 1:
-          DateTime theCurrentTime = DateTime.Now;
-          string _dateText = theCurrentTime.ToShortDateString();
-          Console.WriteLine($"date:{_dateText}");
+          Entry entry1= new Entry();
+          entry1._data="Who was the most interesting person I interacted with today?";
 
-          List <string> prompts = new List<string>();
-          prompts.Add("Who was the most interesting person I interacted with today?");
-          prompts.Add("What was the best part of my day?");
-          prompts.Add("How did I see the hand of the Lord in my life today?");
-          prompts.Add("What was the strongest emotion I felt today?");
-          prompts.Add("If I had one thing I could do over today, what would it be?");
-          prompts.Add("How was the day, good or not?");
+          Entry entry2= new Entry();
+          entry2._data="What was the best part of my day?";
 
-          foreach (string p in prompts)
-          {
-            Console.WriteLine(p);
-          }
+          Entry entry3= new Entry();
+          entry3._data="How did I see the hand of the Lord in my life today?";
+
+          Entry entry4= new Entry();
+          entry4._data="What was the strongest emotion I felt today?";
+
+          Entry entry5= new Entry();
+          entry5._data="If I had one thing I could do over today, what would it be?";
+
+          Entry entry6= new Entry();
+          entry6._data="How was the day, good or not?";
+
+          PromptGenerator promtgene = new PromptGenerator();
+          
+
+        
+      
+
+          
+        
 
             break;
         
           case 2:
+          DateTime theCurrentTime = DateTime.Now;
+          string _dateText = theCurrentTime.ToShortDateString();
+          Console.Write($"date:{_dateText}");
 
             break;
 
