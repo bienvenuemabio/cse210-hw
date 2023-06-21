@@ -1,12 +1,18 @@
 
 public class Journal{
-    public string List<Entry> Entries= new List<Entry>();
-} 
+    public string _name;
+    public List <Entry> _entries = new List <Entry>();
+
 public Journal()
 {
 }
 public void AddingAnEntry()
 {
+    foreach (Entry entry in _entries)
+    {
+        entry.DisplayData();
+
+    }
 
 }
 public void DisplayingAllEntries()
@@ -21,3 +27,4 @@ public void LoadingFromFile()
 {
     
 }
+} 
