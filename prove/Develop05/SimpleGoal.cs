@@ -3,9 +3,9 @@ public class SimpleGoal: Goals
     private int _PointWanted;
     
 
-    public SimpleGoal(string GoalName, string GoalDescription, int GoalPoint, int PointWanted): base(GoalName,GoalDescription,GoalPoint)
+    public SimpleGoal(): base()
     {
-        _PointWanted = PointWanted;
+        
     }
 
     public override int GetPoint()
@@ -13,4 +13,10 @@ public class SimpleGoal: Goals
         return _PointWanted;
 
     }
+
+   // public override string ShowSimpleGoal(string GoalName, string GoalDescription)
+   // {
+    //    Console.WriteLine("The goals are: ");
+    //    Console.WriteLine($"1.[ ] {_GoalName}, ({_GoalDescription})");
+    //}
 }
