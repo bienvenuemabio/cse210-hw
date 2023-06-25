@@ -1,15 +1,19 @@
-public abstract class Goals{
+public class Goals
+{
     private string _GoalName;
     private string _GoalDescription;
     private int _GoalPoint;
 
-    public Goals(string GoalName, string GoalDescription, int GoalPoint)
+    public Goals()
     {
-        _GoalName= GoalName;
-        _GoalDescription= GoalDescription;
-        _GoalPoint= GoalPoint;
+        Console.WriteLine("What is the name of your goal?");
+        _GoalName = Console.ReadLine();
+        Console.WriteLine("What is a description of your goal?");
+        _GoalDescription = Console.ReadLine();
+        Console.WriteLine("What is the amount of point associated with this goal?");
+        _GoalPoint = int.Parse(Console.ReadLine());
 
-    }
+    } 
     public string GetName()
     {
         return _GoalName;
@@ -31,5 +35,12 @@ public abstract class Goals{
     }
 
 
-    public abstract int GetPoint();
+    public virtual int GetPoint()
+    {
+        return _GoalPoint;
+
+    }
+    
+
+    
 }
