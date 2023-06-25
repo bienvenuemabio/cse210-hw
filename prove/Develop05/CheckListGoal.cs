@@ -4,11 +4,13 @@ public class CheckListGoal : Goals
     private int _bonus;
     private int _CheckTimes;
 
-    public CheckListGoal(string GoalName, string GoalDescription, int GoalPoint, int GainNumber, int bonus, int CheckTimes):base(GoalName, GoalDescription,GoalPoint)
+    public CheckListGoal():base()
     {
-        int _GainNumber = GainNumber;
-        int _bonus= bonus;
-        int _CheckTimes= CheckTimes;
+        Console.Write("How many times does this goal need to be accomplished for a bonus?");
+        _CheckTimes= int.Parse(Console.ReadLine());
+        Console.Write("What is the bonus for accomplishing it many times?");
+        _bonus= int.Parse(Console.ReadLine());
+
 
     }
     public override int GetPoint()
