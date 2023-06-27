@@ -83,7 +83,7 @@ class Program
             }
             else
             {
-                Console.Write("Thank you for playing the game.")
+                Console.Write("Thank you for playing the game.");
                 finished=true;
             }
 
