@@ -23,6 +23,7 @@ public class Goals
     {
         return _GoalName;
     }
+    
 
     public void RecordEvent()
     {
