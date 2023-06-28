@@ -1,8 +1,8 @@
 public class Goals
 {
-    private string _GoalName;
-    private string _GoalDescription;
-    private int _GoalPoint;
+    protected string _GoalName;
+    protected string _GoalDescription;
+    protected int _GoalPoint;
 
     public Goals()
     {

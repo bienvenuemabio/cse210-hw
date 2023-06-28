@@ -14,9 +14,9 @@ public class SimpleGoal: Goals
 
     }
 
-   // public override string ShowSimpleGoal(string GoalName, string GoalDescription)
-   // {
-    //    Console.WriteLine("The goals are: ");
-    //    Console.WriteLine($"1.[ ] {_GoalName}, ({_GoalDescription})");
-    //}
+   public void ShowSimpleGoal()
+   {
+        Console.WriteLine("The goals are: ");
+        Console.WriteLine($"1.[ ] {_GoalName}, ({_GoalDescription})");
+   }
 }
