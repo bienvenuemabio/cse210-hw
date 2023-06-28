@@ -60,9 +60,9 @@ class Program
             {
                 finished = false;
                 SimpleGoal simple= new SimpleGoal();
-                simple.GetName();
-                Console.WriteLine("The goals are: ");
-                Console.WriteLine($"[ ] {simple.GetName()}, {simple.GetDescription}");
+                simple.ShowSimpleGoal();
+                //Console.WriteLine("The goals are: ");
+                //Console.WriteLine($"[ ] {simple.GetName()}, {simple.GetDescription}");
 
 
             }
@@ -70,6 +70,27 @@ class Program
             {
                 finished= false;
                 Save s = new Save();
+                string _filename= s.Getfile();
+
+                using (StreamWriter outputFile = new StreamWriter(_filename))
+                {
+                    Goals goal= new Goals();
+                    int points =+ goal.GetPoint();
+                    outputFile.WriteLine(points);
+
+                }
+
+                string[] lines = System.IO.File.ReadAllLines(_filename);
+
+                    foreach (string line in lines)
+                    {
+                        string[] parts = line.Split(",");
+
+                        string _GoalName = parts[0];
+                        string _GoalDescription = parts[1];
+                        int _GoalPoint = int.Parse(parts[2]);
+                    }
+
             }
             else if (userInput == 4)
             {
