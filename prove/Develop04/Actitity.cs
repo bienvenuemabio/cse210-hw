@@ -6,6 +6,7 @@ public class Activity
 
     public Activity(string name, string description, int duration)
     {
+        Console.WriteLine("");
         _name = name;
         _description= description;
         _duration= duration;

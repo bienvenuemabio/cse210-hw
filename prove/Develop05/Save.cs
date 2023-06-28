@@ -12,4 +12,9 @@ public class Save
     {
         return _filename;
     }
+
+   // public string GetStringRepresentation()
+    //{
+
+   // }
 }

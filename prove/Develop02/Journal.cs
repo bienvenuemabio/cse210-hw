@@ -5,6 +5,8 @@ public class Journal{
 
 public Journal()
 {
+    Console.WriteLine("what is the name of your journal?");
+    _name= Console.ReadLine();
 }
 public void AddingAnEntry()
 {
