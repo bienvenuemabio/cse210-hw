@@ -27,8 +27,8 @@ class Program
         Entry entry = new Entry();
         PromptGenerator promptGeneate=  new PromptGenerator("What was the best part of my day?");
         promptGeneate.DisplayGeneratePrompt();
-        //Console.WriteLine("Who was the most interesting person I interacted with today?");
-        //string _userResponse= Console.ReadLine();
+        Console.WriteLine("Who was the most interesting person I interacted with today?");
+        string _userResponse= Console.ReadLine();
         
         
            break;
