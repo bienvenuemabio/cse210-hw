@@ -27,7 +27,7 @@ class Program
 
             switch (_userChoice)
             {
-                case 1: 
+                case 1: BreathingActivity breathing = new BreathingActivity();
 
                     break;
                 

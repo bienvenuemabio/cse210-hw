@@ -1,12 +1,14 @@
 public class Activity
 {
-    private string _name;
-    private string _description;
-    private int _duration;
+    protected string _name;
+    protected string _description;
+    protected int _duration;
+    protected string _startMessage;
+    protected string _endMessage;
 
     public Activity(string name, string description, int duration)
     {
-        Console.WriteLine("");
+        
         _name = name;
         _description= description;
         _duration= duration;
@@ -31,9 +33,12 @@ public class Activity
 
     public void DisplayStartMessage()
     {
+        Console.WriteLine("Get ready");
 
     }
-    public void DisplayEndMessage(){
+    public void DisplayEndMessage()
+    {
+        Console.WriteLine("Well done");
 
     }
 
