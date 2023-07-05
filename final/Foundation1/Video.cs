@@ -3,7 +3,7 @@ public class Video
     public string _title;
     public string _author;
     public int _length;
-    public List<string> _comment;
+    public List<Comment> _comments= new List<Comment>();
 
     public Video(string title, string author, int length)
     {
@@ -25,6 +25,12 @@ public class Video
 
     public void DisplayVideo()
     {
-        Console.WriteLine($"{_title}, {_author}, {_length}");   
+        Console.WriteLine($"{_title}, {_author}, {_length}");
+        Console.WriteLine("comment:");  
+
+        foreach (Comment comment in _comments)
+        {
+            comment.DisplayComment();
+        }
     }
 }
