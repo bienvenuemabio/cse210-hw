@@ -50,10 +50,10 @@ public class Products
         return _price;
     }
 
-    public void PriceofProduct( int total)
+    public void PriceofProduct( int amount)
     {
-        int _total = _quantity * _price;
-        Console.WriteLine($"The price of the product is : {_total}");
+        int _amount = _quantity * _price;
+        Console.WriteLine($"The price of the product is : {_amount}");
     } 
     public void ProductInfo()
     {
