@@ -5,12 +5,12 @@ public class Address
     private string _province;
     private string _country;
 
-    public class Address()
+    public Address()
     {
 
     }
 
-    public void SetAddressId()
+    public void SetAddressId(string addressId)
     {
         _addressId= addressId;
 
@@ -21,18 +21,18 @@ public class Address
         return _addressId;
     }
 
-    public void SetCity()
+    public void SetCity(string city)
     {
         _city= city;
 
     }
 
-    public string GetAddressId()
+    public string GetCity()
     {
         return _city;
     }
 
-    public void SetProvince()
+    public void SetProvince(string province)
     {
         _province= province;
 
@@ -43,7 +43,7 @@ public class Address
         return _province;
     }
 
-    public void SetCountry()
+    public void SetCountry(string country)
     {
         _country= country;
 
@@ -54,17 +54,26 @@ public class Address
         return _country;
     }
 
-    public string IsUsa()
+    public void IsUsa()
     {
+        if (_country== "Usa")
+        {
+            Console.WriteLine($"This customer is in UsA ");
+
+        }
+        else
+        {
+            Console.WriteLine($"This customer is not in Usa");
+        }
 
 
     }
     public void DisplayAllField()
     {
-        Console.WriteLine($"Address Number: {_ addressId}");
-        Console.WriteLine($"City: {_ city}");
-        Console.WriteLine($"Province: {_ Province}");
-        Console.WriteLine($"Country: {_ country}");
+        Console.WriteLine($"Address Number: {_addressId}");
+        Console.WriteLine($"City: {_city}");
+        Console.WriteLine($"Province: {_province}");
+        Console.WriteLine($"Country: {_country}");
 
     }
 }
