@@ -50,17 +50,17 @@ public class Products
         return _price;
     }
 
-    public void PriceofProduct( int amount)
+    public int PriceofProduct()
     {
-        int _amount = _quantity * _price;
-        Console.WriteLine($"The price of the product is : {_amount}");
+        return (_quantity * _price);
+     
     } 
     public void ProductInfo()
     {
         Console.WriteLine($"Product Number:{_productId}");
-        Console.WriteLine($"Product Name:{_name}");
-        Console.WriteLine($"Quantity:{_quantity}");
-        Console.WriteLine($"Price:{_price}");
+        Console.WriteLine($"Product Name:  {_name}");
+        Console.WriteLine($"Quantity:      {_quantity}");
+        Console.WriteLine($"Price:         {_price}");
     }
 
 
