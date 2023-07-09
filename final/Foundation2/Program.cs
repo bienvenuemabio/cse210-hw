@@ -15,6 +15,8 @@ class Program
         product1.GetPrice();
         product1.SetQuantity(8);
         product1.GetQuantity();
-        product1.ProductInfo();
+        order1.AddProduct(product1);
+        order1.DisplayPackingLabel();
+        
     }
 }
