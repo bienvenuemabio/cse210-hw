@@ -1,7 +1,7 @@
 
 public class Words
 {
-    private  string _word;
+    private string _word;
 
     public Words()
     {
@@ -14,7 +14,7 @@ public class Words
     }
     public void hide()
     {
-        _word= "_ _ _";
+         _word= "_ _ _";
     
     }
 

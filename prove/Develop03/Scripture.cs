@@ -2,12 +2,8 @@ public class Scripture{
 
     private string _scripture;
 
-    public Scripture()
+    public Scripture(string scripture)
     {
-        _scripture="";
-
-    }
-    public Scripture(string scripture){
         _scripture= scripture;
     }
 
@@ -19,16 +15,18 @@ public class Scripture{
 
     }
 
-    public void HideWords(){
+    public void HideWords()
+    {
 
     }
-    public void GetRenderedText(){
+    public void GetRenderedText()
+    {
 
     }
 
     public void IsCompletelyHidden()
     {
-        
+         
     }
 
 }
