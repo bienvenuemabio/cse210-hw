@@ -1,12 +1,16 @@
 public class Customer
 {
     private string _customName;
-    private string _customAddress;
+    private Address _customAddress;
     
-    public Customer()
+    
+    public Customer(string customName, Address customAddress)
     {
+        _customName= customName;
+        _customAddress= customAddress;
 
     }
+
     public void SetCustomName(string customName)
     {
         _customName= customName;
@@ -17,20 +21,19 @@ public class Customer
         return _customName;
     }
 
-    public void SetCustomAddress(string customAddress)
-    {
-        _customAddress= customAddress;
-
-    } 
-    public string GetCustomAddress()
+    public Address GetCustomAddress()
     {
         return _customAddress;
-    }
+    } 
+    //public string GetCustomAddress()
+    //{
+      //  return _customAddress;
+    //}
 
     public void DisplayCustomerInfo()
     {
         Console.WriteLine($"Customer Name:{_customName}");
-        Console.WriteLine($"Address: {_customAddress}");
+        Console.WriteLine($"Address: {_customAddress.DisplayAllField}");
 
 
     }
