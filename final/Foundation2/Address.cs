@@ -5,16 +5,19 @@ public class Address
     private string _province;
     private string _country;
 
-    public Address()
+    public Address(string addressId, string city, string province, string country)
     {
-
+        _addressId = addressId;
+        _city = city;
+        _province = province;
+        _country = country;
     }
 
-    public void SetAddressId(string addressId)
-    {
-        _addressId= addressId;
+   // public void SetAddressId(string addressId)
+    //{
+      //  _addressId= addressId;
 
-    }
+    //}
 
     public string GetAddressId()
     {
@@ -54,18 +57,9 @@ public class Address
         return _country;
     }
 
-    public void IsUsa()
+    public bool IsUsa(bool checker)
     {
-        if (_country== "Usa")
-        {
-            Console.WriteLine($"This customer is in UsA ");
-
-        }
-        else
-        {
-            Console.WriteLine($"This customer is not in Usa");
-        }
-
+        return checker = _country.Contains("USA");
 
     }
     public void DisplayAllField()
