@@ -35,12 +35,12 @@ class Program
         Console.WriteLine();
 
         Video video4= new Video("Best of efy","Joshua Poter",12000);
-        Comment com1= new Comment("roland","ohh cool");
-        Comment com2= new Comment("Marc","Thank you for displaying this great leaning");
-        Comment com3= new Comment("feli","That is what i am looking for");
+        Comment com1= new Comment("roland","ohh cool song");
+        Comment com2= new Comment("Marc","Thank you for this great song, i can feel the spirit");
+        //Comment com3= new Comment("feli","That is what i am looking for");
         video4.StoreComment(com1);
         video4.StoreComment(com2);
-        video4.StoreComment(com3);
+        //video4.StoreComment(com3);
         Console.WriteLine();
 
         List<Video> _videos = new List<Video>();
@@ -52,6 +52,7 @@ class Program
         foreach (Video video in _videos)
         {
             video.DisplayVideo();
+            Console.WriteLine();
 
         }
 
