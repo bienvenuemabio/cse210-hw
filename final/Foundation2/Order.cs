@@ -2,17 +2,19 @@ public class Order
 {
     private int _totalCost;
     private int _totalPrice;
-    private int _shippingCost;
+    private int _shippingCost=5;
+    private int _outshippingCost=35;
     public List<Products> _products;
-    public List<Customer> _customers;
+    public List<Customer> _customer;
 
-    public Order(int totalPrice, int totalCost, int shippingCost)
+    public Order(int totalPrice, int totalCost, int shippingCost, int outshippingCost)
     {
         _totalCost=0;
         _totalPrice=0;
-        _shippingCost=35;
+        _shippingCost=5;
+        _outshippingCost=35;
         _products= new List<Products>();
-        _customers= new List<Customer>();
+        _customer= new List<Customer>();
 
     }
 
@@ -25,7 +27,7 @@ public class Order
 
     public void AddCustomer(Customer customers)
     {
-        _customers.Add(customers);
+        _customer.Add(customers);
     }
 
     public void TotalCostOrdered()
@@ -35,14 +37,11 @@ public class Order
            _totalCost += product.PriceofProduct();
             
         }
-        _totalPrice= _totalCost * _shippingCost;
+       // _totalPrice = _totalCost * _customer.GetAddress().IsUsa()?_shippingCost: _outshippingCost;
+            _totalPrice= _totalCost * _shippingCost;
             Console.WriteLine($"The total Price is: {_totalPrice}");
 
-           // _shippingCost =35;
-            //_totalPrice= _totalCost * _shippingCost;
-           // Console.WriteLine($"The total Price is: {_totalPrice}");
 
-        //}
         
 
     }
@@ -59,7 +58,7 @@ public class Order
 
     public void DisplayShippingLabel()
     {
-        foreach (Customer customer in _customers)
+        foreach (Customer customer in _customer)
         {
             customer.DisplayCustomerInfo();
         }
