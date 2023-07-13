@@ -4,7 +4,7 @@ public class Address
     private string _city;
     private string _province;
     private string _country;
-    private bool checker;
+    //private bool _checker;
 
     public Address(string addressId, string city, string province, string country)
     {
@@ -13,12 +13,6 @@ public class Address
         _province = province;
         _country = country;
     }
-
-   // public void SetAddressId(string addressId)
-    //{
-      //  _addressId= addressId;
-
-    //}
 
     public string GetAddressId()
     {
@@ -60,7 +54,8 @@ public class Address
 
     public bool IsUsa(bool checker)
     {
-        return checker = _country.Contains("USA");
+        bool _checker;
+        return _checker = _country.Contains("USA");
 
     }
     public void DisplayAllField()
