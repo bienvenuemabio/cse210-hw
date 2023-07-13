@@ -26,14 +26,14 @@ public class Video
         {
             _commentNumber= _comments.Count();
         }
-        Console.WriteLine($"There are {_commentNumber} comments made");
+        Console.WriteLine($"There are {_commentNumber} comments made for this video");
         
     }
 
     public void DisplayVideo()
     {
         Console.WriteLine($"Video title:{_title}");
-        Console.WriteLine($"Author:{_author}");
+        Console.WriteLine($"Author:{_author.ToUpper()}");
         Console.WriteLine($"Length:{_length} seconds");
         Console.WriteLine("The comments of this video are:");  
 
