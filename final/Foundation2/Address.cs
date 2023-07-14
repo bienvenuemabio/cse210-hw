@@ -58,12 +58,9 @@ public class Address
         return _checker = _country.Contains("USA");
 
     }
-    public void DisplayAllField()
+    public string  DisplayAllField()
     {
-        Console.WriteLine($"Address Number: {_addressId}");
-        Console.WriteLine($"City: {_city}");
-        Console.WriteLine($"Province: {_province}");
-        Console.WriteLine($"Country: {_country}");
+       return $"Address Number: {_addressId} \n City: {_city} \n Province: {_province} \n country: {_country}";
 
     }
 }
