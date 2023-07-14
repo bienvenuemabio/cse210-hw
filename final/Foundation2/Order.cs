@@ -18,6 +18,8 @@ public class Order
 
     }
 
+
+
     public void AddProduct(Products product)
     {
         _products.Add(product);
@@ -37,12 +39,12 @@ public class Order
            _totalCost += product.PriceofProduct();
             
         }
-       // _totalPrice = _totalCost * _customer.GetAddress().IsUsa()?_shippingCost: _outshippingCost;
+
+        Console.WriteLine($"The total Cost is: {_totalCost}");
+       // _totalPrice = _totalCost * _customer.Address().IsUsa()?_shippingCost: _outshippingCost;
             _totalPrice= _totalCost * _shippingCost;
-            Console.WriteLine($"The total Price is: {_totalPrice}");
 
-
-        
+        Console.WriteLine($"The total Price is: {_totalPrice}");
 
     }
 
@@ -52,8 +54,6 @@ public class Order
         {
             product.ProductInfo();
         }
-
-
     }
 
     public void DisplayShippingLabel()
