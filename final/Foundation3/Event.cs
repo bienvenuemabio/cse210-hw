@@ -21,16 +21,9 @@ public class Event
 
     }
 
-    public void StandardDetails()
+    public string StandardDetails()
     {
-        Console.WriteLine("Standard Details");
-        Console.WriteLine($"Title: {_title}");
-        Console.WriteLine($"Description: {_description}");
-        Console.WriteLine($"Date: {_date}");
-        Console.WriteLine($"Time: {_time}");
-        Console.WriteLine($"Address: {_address}");
-
-
+        return $"Title: {_title}, Description: {_description},Date: {_date}, Time: {_time},Address: {_address}";
     }
 
     public void FullDetails()
