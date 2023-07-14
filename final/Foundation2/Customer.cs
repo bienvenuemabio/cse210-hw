@@ -2,6 +2,7 @@ public class Customer
 {
     private string _customName;
     private Address _address;
+    private string _addresses;
     
     
     public Customer(string customName, Address address)
@@ -28,10 +29,18 @@ public class Customer
 
     public void DisplayCustomerInfo()
     {
-        Console.WriteLine($"Customer Name:{_customName}");
-        Console.WriteLine($"Address: {_address.DisplayAllField}");
-
+        _addresses= _address.DisplayAllField();
+        Console.WriteLine($" \n Customer Name:{_customName} \n {_addresses}");
 
     }
+
+public string Address()
+{
+    _addresses= _address.DisplayAllField();
+    return _addresses;
+
+}
+    
+
 
 }
