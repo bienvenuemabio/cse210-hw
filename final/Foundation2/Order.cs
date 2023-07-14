@@ -40,11 +40,11 @@ public class Order
             
         }
 
-        Console.WriteLine($"The total Cost is: {_totalCost}");
+        Console.WriteLine($"The total Cost for all your product is: {_totalCost}");
        // _totalPrice = _totalCost * _customer.Address().IsUsa()?_shippingCost: _outshippingCost;
             _totalPrice= _totalCost * _shippingCost;
 
-        Console.WriteLine($"The total Price is: {_totalPrice}");
+        Console.WriteLine($"The total Price ordered is: {_totalPrice}");
 
     }
 
