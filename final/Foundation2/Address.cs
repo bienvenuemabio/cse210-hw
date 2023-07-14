@@ -60,7 +60,7 @@ public class Address
     }
     public string  DisplayAllField()
     {
-       return $"Address Number: {_addressId} \n City: {_city} \n Province: {_province} \n country: {_country}";
+       return $"Address Number: {_addressId} \n City: {_city} \n Province: {_province} \n Country: {_country}";
 
     }
 }
