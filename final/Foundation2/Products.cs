@@ -61,6 +61,7 @@ public class Products
         Console.WriteLine($"Product Name:  {_name}");
         Console.WriteLine($"Quantity:      {_quantity}");
         Console.WriteLine($"Price:         {_price}");
+        Console.WriteLine($"Amount:        {_price * _quantity}");
     }
 
 
