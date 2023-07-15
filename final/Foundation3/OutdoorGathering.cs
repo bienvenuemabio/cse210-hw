@@ -1,14 +1,17 @@
 public class OutdoorGathering: Event
 {
-    private Boolean _coolWeather;
+    private string _weatherStatement;
 
-    public OutdoorGathering(Boolean coolWeather, string title, string description, string date, string time, Address address): base(title,description,date,time,address)
+    public OutdoorGathering(string weatherStatement, string type, string title, string description, string date, string time, Address address): base(type,title,description,date,time,address)
     {
-        _coolWeather= coolWeather;
+        _weatherStatement= weatherStatement;
     }
 
-    public void GetWeather()
+    public string GetWeather()
     {
+        return _weatherStatement;
 
     }
+    
+    
 }
