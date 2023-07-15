@@ -10,6 +10,6 @@ public class Reception: Event
 
     public string GetRegisterEmail()
     {
-        return _registerEmail;
+        return $"Email: {_registerEmail}";
     }
 }

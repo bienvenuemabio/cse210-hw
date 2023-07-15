@@ -9,7 +9,7 @@ public class OutdoorGathering: Event
 
     public string GetWeather()
     {
-        return _weatherStatement;
+        return $"Weather Statement:{_weatherStatement}";
 
     }
     
