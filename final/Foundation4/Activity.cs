@@ -1,20 +1,32 @@
 public class Activity
 {
     private string _name;
-    private string _distance;
-    private int _speed;
-    private int _pace;
     private string _date;
+    private int _length;
 
-    public Activity(string name, string distance, int speed, int pace, string date)
+    public Activity(string name, string date, int length)
     {
         _name = name;
-        _distance = distance;
-        _speed    = speed;
-        _pace= pace;
-        _date= date;
+        _date = date;
+        _length = length;
+    }
 
+    public void GetDistance()
+    {
 
+    }
+    public void GetSpeed()
+    {
+
+    }
+
+    public void GetPace()
+    {
+
+    }
+    public string Summary()
+    {
+        return $"{_date} {_name}({_length}min)";
     }
 
     public void Getsummary()
