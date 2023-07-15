@@ -1,15 +1,15 @@
 public class Reception: Event
 {
-    private string _register;
+    private string _registerEmail;
 
-    public Reception(string register, string title, string description, string date, string time, Address address): base(title,description,date,time,address)
+    public Reception(string registerEmail, string type, string title, string description, string date, string time, Address address): base(type,title,description,date,time,address)
     {
-        _register= register;
+        _registerEmail= registerEmail;
 
     }
 
-    public string GetRegister()
+    public string GetRegisterEmail()
     {
-        return _register;
+        return _registerEmail;
     }
 }
