@@ -13,6 +13,6 @@ public class Address
 
     public string GetAddressInfo()
     {
-        return $" Number:{_id} ,{_city},{_country}";
+        return $" {_id} ,{_city},{_country}";
     }
 }
