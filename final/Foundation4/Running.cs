@@ -10,8 +10,15 @@ public class Running: Activity
 
     }
 
-    public void GetPlace()
+    public override int GetPace()
     {
+        return (60 / _distance);
+
+    }
+
+    public string GetPlace()
+    {
+        return _place;
 
     }
 
