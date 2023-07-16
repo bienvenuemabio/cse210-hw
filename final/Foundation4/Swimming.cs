@@ -7,4 +7,15 @@ public class Swimming: Activity
         _numberofLaps= numberofLaps;
 
     }
+
+    public int GetNumberofLaps()
+    {
+        return _numberofLaps;
+    }
+    public override int GetDistance()
+    {
+        return _numberofLaps * 50 / 1000;
+    }
+
+
 }
