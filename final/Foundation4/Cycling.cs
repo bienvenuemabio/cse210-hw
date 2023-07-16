@@ -8,4 +8,10 @@ public class Cycling: Activity
 
     }
 
+    public override int GetSpeed()
+    {
+        return 60 / _speed;
+
+    }
+
 }
