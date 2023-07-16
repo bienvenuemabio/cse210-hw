@@ -3,9 +3,9 @@ public class Activity
     private string _name;
     private string _date;
     private int _length;
-    private int _distance= 0;
-    private int _speed = 0;
-    private int _pace = 0;
+    private int _distance;
+    private int _speed;
+    private int _pace;
 
     public Activity(string name, string date, int length)
     {
@@ -17,7 +17,7 @@ public class Activity
 
     public virtual int GetDistance()
     {
-        return _distance += 60;
+        return _distance;
 
     }
     public virtual int GetSpeed()
