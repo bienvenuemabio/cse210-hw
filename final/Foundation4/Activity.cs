@@ -3,6 +3,9 @@ public class Activity
     private string _name;
     private string _date;
     private int _length;
+    private int _distance;
+    private int _speed;
+    private int _pace;
 
     public Activity(string name, string date, int length)
     {
@@ -11,22 +14,26 @@ public class Activity
         _length = length;
     }
 
-    public void GetDistance()
+    public virtual int GetDistance()
     {
+        return _distance;
 
     }
-    public void GetSpeed()
+    public virtual int GetSpeed()
     {
+        return _speed;
+
 
     }
 
-    public void GetPace()
+    public virtual int GetPace()
     {
+        return _pace;
 
     }
     public string Summary()
     {
-        return $"{_date} {_name}({_length}min)";
+        return $"{_date} {_name}({_length}min): Distance {_distance}km, Speed: {_speed} kph, Pace: {_pace} min per km";
     }
 
     public void Getsummary()
